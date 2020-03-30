@@ -1,0 +1,106 @@
+#Display {
+    animation: Display infinite 6000ms ease-in-out forwards;
+}
+
+@keyframes Display {
+    0% {
+        transform: translateX(100px);
+    }
+    20% {
+        transform: translateX(-0px);
+    }
+    100% {
+        transform: translateX(-0px);
+    }
+}
+
+#QR {
+    transform: translateX(-0%) translateY(-0%);
+    opacity: 0;
+    animation: QR infinite 6000ms ease-in-out forwards;
+}
+
+@keyframes QR {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+:root {
+    --arrow-s: -100px;
+    --arrow-e: 0px;
+}
+#Arrow {
+    transform: translateX(var(--arrow-e)) translateY(-0%);
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation:
+        Arrow infinite 6000ms ease-in-out forwards;
+}
+
+@keyframes Arrow {
+    0% {
+        opacity: 0;
+        transform: translateX(var(--arrow-s));
+    }
+    20% {
+        opacity: 0;
+        transform: translateX(var(--arrow-s));
+    }
+    25% {
+        opacity: 0;
+        transform: translateX(var(--arrow-e));
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(var(--arrow-s));
+    }
+    35% {
+        transform: translateX(var(--arrow-e));
+    }
+    40% {
+        transform: translateX(var(--arrow-s));
+    }
+    45% {
+        transform: translateX(var(--arrow-e));
+    }
+    50% {
+        transform: translateX(var(--arrow-s));
+    }
+    55% {
+        transform: translateX(var(--arrow-e));
+    }
+    60% {
+        transform: translateX(var(--arrow-s));
+    }
+    65% {
+        transform: translateX(var(--arrow-e));
+    }
+    70% {
+        transform: translateX(var(--arrow-s));
+    }
+    75% {
+        transform: translateX(var(--arrow-e));
+    }
+    80% {
+        transform: translateX(var(--arrow-s));
+    }
+    85% {
+        transform: translateX(var(--arrow-e));
+    }
+    90% {
+        transform: translateX(var(--arrow-s));
+    }
+    95% {
+        transform: translateX(var(--arrow-e));
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(var(--arrow-s));
+    }
+}
